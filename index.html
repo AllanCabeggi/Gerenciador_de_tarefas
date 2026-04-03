@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Minhas Tarefas</h1>
+
+    <form id="tarefas-form">
+      <input type="text" id="tarefas-input" placeholder="Digite uma nova tarefa..." required>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="filtro">
+      <select id="filtro">
+        <option value="todas">Todas</option>
+        <option value="completada">Concluídas</option>
+        <option value="pedente">Pendentes</option>
+      </select>
+    </div>
+
+    <ul id="tarefas-list"></ul>
+  </div>
+
+  <script src="coracao.js"></script>
+</body>
+</html>
